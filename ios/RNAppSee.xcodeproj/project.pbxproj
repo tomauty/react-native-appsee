@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D2E9905D7E4A76AF73C6D41 /* libPods-RNAppSee.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3573CB27A827EF14167E9B /* libPods-RNAppSee.a */; };
 		E2F7CF711CECFF8100A16A51 /* RNAppSee.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F7CF701CECFF8100A16A51 /* RNAppSee.m */; };
 /* End PBXBuildFile section */
 
@@ -23,9 +24,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		204DD81E4DA48D54A02B8507 /* Pods-RNAppSee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNAppSee.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNAppSee/Pods-RNAppSee.release.xcconfig"; sourceTree = "<group>"; };
+		8F3573CB27A827EF14167E9B /* libPods-RNAppSee.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNAppSee.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F7CF641CECFEC700A16A51 /* libRNAppSee.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNAppSee.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F7CF701CECFF8100A16A51 /* RNAppSee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNAppSee.m; sourceTree = "<group>"; };
 		E2F7CF721CECFF8900A16A51 /* RNAppSee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNAppSee.h; sourceTree = "<group>"; };
+		FF9D86591EC43D075A4C0BC7 /* Pods-RNAppSee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNAppSee.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNAppSee/Pods-RNAppSee.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,18 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D2E9905D7E4A76AF73C6D41 /* libPods-RNAppSee.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		804401E4EE539811E50CAD80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F3573CB27A827EF14167E9B /* libPods-RNAppSee.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C680BDA50A346016C62FC955 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF9D86591EC43D075A4C0BC7 /* Pods-RNAppSee.debug.xcconfig */,
+				204DD81E4DA48D54A02B8507 /* Pods-RNAppSee.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E2F7CF5B1CECFEC700A16A51 = {
 			isa = PBXGroup;
 			children = (
 				E2F7CF701CECFF8100A16A51 /* RNAppSee.m */,
 				E2F7CF721CECFF8900A16A51 /* RNAppSee.h */,
 				E2F7CF651CECFEC700A16A51 /* Products */,
+				C680BDA50A346016C62FC955 /* Pods */,
+				804401E4EE539811E50CAD80 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,9 +87,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2F7CF6D1CECFEC700A16A51 /* Build configuration list for PBXNativeTarget "RNAppSee" */;
 			buildPhases = (
+				22942096E9514347091BAAB7 /* 📦 Check Pods Manifest.lock */,
 				E2F7CF601CECFEC700A16A51 /* Sources */,
 				E2F7CF611CECFEC700A16A51 /* Frameworks */,
 				E2F7CF621CECFEC700A16A51 /* CopyFiles */,
+				4D1A56D8709EB6A2DB7BE596 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -106,6 +132,39 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22942096E9514347091BAAB7 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4D1A56D8709EB6A2DB7BE596 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RNAppSee/Pods-RNAppSee-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E2F7CF601CECFEC700A16A51 /* Sources */ = {
@@ -203,7 +262,15 @@
 		};
 		E2F7CF6E1CECFEC700A16A51 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF9D86591EC43D075A4C0BC7 /* Pods-RNAppSee.debug.xcconfig */;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../react-native/React",
+					"$(SRCROOT/../../React",
+					"$(SRCROOT)/node_modules/react-native/React",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -212,7 +279,15 @@
 		};
 		E2F7CF6F1CECFEC700A16A51 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 204DD81E4DA48D54A02B8507 /* Pods-RNAppSee.release.xcconfig */;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../react-native/React",
+					"$(SRCROOT/../../React",
+					"$(SRCROOT)/node_modules/react-native/React",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -238,6 +313,7 @@
 				E2F7CF6F1CECFEC700A16A51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

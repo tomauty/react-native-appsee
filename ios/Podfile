@@ -1,0 +1,3 @@
+target 'RNAppSee' do
+	pod 'Appsee'
+end
