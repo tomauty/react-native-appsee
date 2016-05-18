@@ -1,0 +1,35 @@
+{
+  "name": "react-native-appsee",
+  "version": "0.0.1",
+  "description": "Integrate AppSee SDK with React Native",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomauty/react-native-appsee.git"
+  },
+  "keywords": [
+    "react-native",
+    "react",
+    "mobile",
+    "ios",
+    "android",
+    "appsee",
+    "analytics",
+    "sdk"
+  ],
+  "author": "Tom Auty",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tomauty/react-native-appsee/issues"
+  },
+  "homepage": "https://github.com/tomauty/react-native-appsee#readme",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-eslint": "^6.0.4",
+    "eslint": "^2.10.2",
+    "eslint-plugin-react": "^5.1.1"
+  }
+}
