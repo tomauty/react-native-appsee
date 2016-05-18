@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:react-native-appsee.xcodeproj">
+      location = "self:RNAppSee.xcodeproj">
    </FileRef>
 </Workspace>
