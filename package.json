@@ -4,7 +4,8 @@
   "description": "Integrate AppSee SDK with React Native",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+		"postinstall": "cd node_modules/react-native-appsee/ios && pod install && cd -"
   },
   "repository": {
     "type": "git",
