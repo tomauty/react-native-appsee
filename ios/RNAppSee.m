@@ -4,7 +4,7 @@
 //  Created by 坏小子不错的嘴唇 on 5/18/16.
 //  Copyright © 2016 坏小子不错的嘴唇. All rights reserved.
 //
-#import "AppSeeManager.h"
+#import "RNAppSee.h"
 #import <Appsee/Appsee.h>
 
 @implementation AppSeeManager
