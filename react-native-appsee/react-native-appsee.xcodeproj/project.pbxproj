@@ -1,0 +1,74 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		E2F7CF2A1CECFD8D00A16A51 /* AppSeeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppSeeManager.h; path = ../AppSeeManager.h; sourceTree = "<group>"; };
+		E2F7CF2B1CECFD8D00A16A51 /* AppSeeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppSeeManager.m; path = ../AppSeeManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		E2F7CF231CECFD7200A16A51 = {
+			isa = PBXGroup;
+			children = (
+				E2F7CF2A1CECFD8D00A16A51 /* AppSeeManager.h */,
+				E2F7CF2B1CECFD8D00A16A51 /* AppSeeManager.m */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		E2F7CF241CECFD7200A16A51 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+			};
+			buildConfigurationList = E2F7CF271CECFD7200A16A51 /* Build configuration list for PBXProject "react-native-appsee" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E2F7CF231CECFD7200A16A51;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		E2F7CF281CECFD7200A16A51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		E2F7CF291CECFD7200A16A51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2F7CF271CECFD7200A16A51 /* Build configuration list for PBXProject "react-native-appsee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2F7CF281CECFD7200A16A51 /* Debug */,
+				E2F7CF291CECFD7200A16A51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2F7CF241CECFD7200A16A51 /* Project object */;
+}
